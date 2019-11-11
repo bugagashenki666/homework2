@@ -12,16 +12,16 @@ from calc.history import print_calculations
 
 
 def calculate(s):
-    regex = r"(\d+\.?\d*)([+-/*]{1}|\*\*)(\d+\.?\d*)"
+    regex = r"((\d+\.?\d+)([+-/*]{1}|\*\*)(\d+\.?\d+))|(\D+)"
     matches = re.finditer(regex, s)
     results = []
     for matchNum, match in enumerate(matches, start=0):
-        a = match.group(1)
-        op = match.group(2)
-        b = match.group(3)
-        float_set = set(list("0123456789."))
-        if not set(list(a)) <= float_set or not set(list(b)) <= float_set or not set(list(op)) <= set(list("+-/*")):
-            results.append([-1, -1, -1, -1])
+        a = match.group(2)
+        op = match.group(3)
+        b = match.group(4)
+        mismatch_ = match.group(5)
+        if mismatch_ is not None:
+            results.append([-1, -1, -1, mismatch_])
             continue
         res = 0
         if op == "+":
@@ -54,9 +54,9 @@ def execute():
                 b = st[1]
                 op = st[2]
                 res = st[3]
-                if a == -1 and b == - 1 and op == -1 and res == -1:
-                    print("Not correct expression: {}".format(s))
-                    save_error("Not correct expression: {}".format(s))
+                if a == -1 and b == - 1 and op == -1:
+                    print("Not correct expression: {}".format(res))
+                    save_error("Not correct expression: {}".format(res))
                 else:
                     print("{}{}{}={}".format(a, op, b, res))
                     save(a, b, op, res)
