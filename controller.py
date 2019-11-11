@@ -11,8 +11,8 @@ from calc.history import clear
 from calc.history import print_calculations
 
 
-def calculate(s):
-    regex = r"((\d+\.?\d+)([+-/*]{1}|\*\*)(\d+\.?\d+))|(\D+)"
+def calculate_re(s):
+    regex = r"(([-]?\d+\.?\d*)([+-/*]{1}|[*]{2})(-?\d+\.?\d*))|(\D+)"
     matches = re.finditer(regex, s)
     results = []
     for matchNum, match in enumerate(matches, start=0):
@@ -48,15 +48,12 @@ def execute():
         elif s in ("clear", "clr"):
             clear()
         else:
-            results_ = calculate(s)
+            results_ = calculate_re(s)
             for st in results_:
-                a = st[0]
-                b = st[1]
-                op = st[2]
-                res = st[3]
+                a, b, op, res = st
                 if a == -1 and b == - 1 and op == -1:
-                    print("Not correct expression: {}".format(res))
-                    save_error("Not correct expression: {}".format(res))
+                    print("Not correct expression: '{}' in string '{}'".format(res, s))
+                    save_error("Not correct expression: '{}' in string '{}'".format(res, s))
                 else:
                     print("{}{}{}={}".format(a, op, b, res))
                     save(a, b, op, res)
