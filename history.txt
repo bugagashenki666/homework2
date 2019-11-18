@@ -1,49 +1,5 @@
-Not correct expression: gg+
-Not correct expression: fff
-Not correct expression: 77778jjjj9999
-Not correct expression: 34343ggg34343
-Not correct expression: +34343
-Not correct expression: +44343
-Not correct expression: .4444
-Not correct expression: +34343
-Not correct expression: kkk
-34343+343434=377777.0
-Not correct expression: -
-34343+54545=88888.0
-Not correct expression: klklk in string 34343klklk3434+343433kkk-354545+3434434
-3434+343433=346867.0
-Not correct expression: kkk- in string 34343klklk3434+343433kkk-354545+3434434
-354545+3434434=3788979.0
-Not correct expression: kkkk in string 4342kkkk2434324-234234-234234+234342ddgdgd234234
-2434324-234234=2200090.0
--234234+234342=108.0
-Not correct expression: ddgdgd in string 4342kkkk2434324-234234-234234+234342ddgdgd234234
-Not correct expression: 'fdfs' in string '24344fdfs444dfdfd34323+2324242   234234**2'
-Not correct expression: 'dfdfd' in string '24344fdfs444dfdfd34323+2324242   234234**2'
-34323+2324242=2358565.0
-Not correct expression: '   ' in string '24344fdfs444dfdfd34323+2324242   234234**2'
-Not correct expression: '**' in string '24344fdfs444dfdfd34323+2324242   234234**2'
-Not correct expression: 'tfgfd' in string 'tfgfd34343+343434ggg6546**6     54545-4455   423424/234234'
-34343+343434=377777.0
-Not correct expression: 'ggg' in string 'tfgfd34343+343434ggg6546**6     54545-4455   423424/234234'
-Not correct expression: '**' in string 'tfgfd34343+343434ggg6546**6     54545-4455   423424/234234'
-Not correct expression: '     ' in string 'tfgfd34343+343434ggg6546**6     54545-4455   423424/234234'
-54545-4455=50090.0
-Not correct expression: '   ' in string 'tfgfd34343+343434ggg6546**6     54545-4455   423424/234234'
-423424/234234=1.807696576927346
-Not correct expression: '**' in string '56**2'
-Not correct expression: 'gggg' in string 'gggg45455**35'
-45455**35=1.0359962264719903e+163
-Not correct expression: '--' in string '24234--234234'
-234324**-234=0.0
-22342+-34=22308.0
-Not correct expression: '**-' in string '4**-2'
-Not correct expression: '**-' in string '8**-3'
-Not correct expression: '**-' in string '6**-2'
-Not correct expression: '**' in string '4565**5'
-445*2=890.0
-4**2=16.0
-4**-3=0.015625
-4**-0.5=0.5
-4**2=16.0
-4**0.5=2.0
+21434+43=21477.0
+Not correct expression: 'mlkmkm' in string '21434+43mlkmkm243**2mm4334**-234'
+243**2=59049.0
+Not correct expression: 'mm' in string '21434+43mlkmkm243**2mm4334**-234'
+4334**-234=0.0
